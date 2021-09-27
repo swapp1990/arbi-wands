@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <a href="https://github.com/swapp1990/scifi-loot" target="_blank" rel="noopener noreferrer">
+    <a href="/">
       <PageHeader
         title="Wands for Wizards"
         subTitle="Arbitrum NFT game"

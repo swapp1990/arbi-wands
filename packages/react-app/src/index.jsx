@@ -5,6 +5,8 @@ import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import ReactDOM from "react-dom";
 import App from "./App";
 import Home from "./Home";
+import Resources from "./views/Resources";
+import FAQ from "./views/FAQ";
 import "./index.css";
 
 const themes = {
@@ -27,6 +29,13 @@ ReactDOM.render(
       <Route exact path="/">
         <Home />
       </Route>
+      <Route exact path="/faq">
+        <FAQ />
+      </Route>
+      <Route exact path="/resources">
+        <Resources />
+      </Route>
+
       <Route exact path="/app">
         <ApolloProvider client={client}>
           <ThemeSwitcherProvider themeMap={themes} defaultTheme={prevTheme || "light"}>

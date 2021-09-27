@@ -69,6 +69,7 @@ export default function WandMintTest({
     });
     console.log(await result1);
   };
+
   return (
     <div style={{ maxWidth: 1024, margin: "auto", paddingBottom: 56 }}>
       <Button onClick={mintWand} style={{ marginBottom: "5px", marginTop: "25px" }}>

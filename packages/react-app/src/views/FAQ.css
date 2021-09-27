@@ -1,0 +1,13 @@
+.selected {
+  color: #fff !important;
+}
+
+.unselected {
+  color: #838383 !important;
+}
+
+.faq {
+  margin: 0px auto;
+  max-width: 800px;
+  margin-top: 30px;
+}
