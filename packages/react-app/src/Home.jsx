@@ -79,7 +79,7 @@ export default function Home() {
             </a>
           </a>
           <a>
-            <a href="https://opensea.io" target="_blank" rel="noopener noreferrer">
+            <a href="https://t.me/arbiwands" target="_blank" rel="noopener noreferrer">
               Telegram
             </a>
           </a>
@@ -101,6 +101,12 @@ export default function Home() {
         <Wand1></Wand1>
         <Wand2></Wand2>
         <Wand3></Wand3>
+      </div>
+      <div className="story">
+        <p>
+          Wands for Wizards are randomized & unique 10k wands built and stored on Arbitrum chain. The wands that you own
+          will be used throughout the Wizard Metaverse to perform magic.
+        </p>
       </div>
     </>
   );

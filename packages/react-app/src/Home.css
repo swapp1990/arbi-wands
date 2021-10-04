@@ -113,3 +113,17 @@ h1 {
   justify-content: space-around;
   margin-top: 10px;
 }
+
+.story {
+  max-width: 900px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.story p {
+  color: #8e8e8e;
+  font-size: 22px;
+}
