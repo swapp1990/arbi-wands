@@ -21,7 +21,7 @@ import {
   useUserSigner,
 } from "./hooks";
 // import Hints from "./Hints";
-import { WandMintTest, WandsUI } from "./views";
+import { WandMintTest, WandsUI, LinkTest } from "./views";
 import Portis from "@portis/web3";
 import Fortmatic from "fortmatic";
 import Authereum from "authereum";
@@ -47,7 +47,7 @@ const { ethers } = require("ethers");
 */
 
 /// 📡 What chain are your contracts deployed to?
-const targetNetwork = NETWORKS.arbitrum; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
+const targetNetwork = NETWORKS.rinkeby; // <------- select your target frontend network (localhost, rinkeby, rinkebyArbitrum, mainnet)
 
 // 😬 Sorry for all the console logging
 const DEBUG = false;
@@ -459,7 +459,7 @@ function App(props) {
 
         <Switch>
           <Route exact path="/app">
-            <WandsUI
+            <LinkTest
               address={address}
               userSigner={userSigner}
               mainnetProvider={mainnetProvider}

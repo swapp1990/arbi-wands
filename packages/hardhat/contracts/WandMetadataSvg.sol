@@ -39,6 +39,9 @@ library WandMetadataSvg {
 
 		string memory image = Base64.encode(bytes(generateSVGofTokenById(owner,tokenId,attrs[0],attrs[1],attrs[2],attrs[3],attrs[4],attrs[5],attrs[6])));
 
+		string memory metadata = string(abi.encodePacked(attrs[0],",",attrs[1],",",attrs[2],",",attrs[3],","));
+		metadata = string(abi.encodePacked(metadata, attrs[4], ",",attrs[5],",",attrs[6]));
+
 		return string(
 			abi.encodePacked(
 				'data:application/json;base64,',
@@ -47,7 +50,8 @@ library WandMetadataSvg {
 						abi.encodePacked(
 							'{"name":"',
 							name,
-
+							'", "metadata": "',
+							metadata,
 							'", "image": "',
 							'data:image/svg+xml;base64,',
 							image,

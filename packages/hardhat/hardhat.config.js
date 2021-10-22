@@ -27,8 +27,8 @@ const { isAddress, getAddress, formatUnits, parseUnits } = utils;
 // Select the network you want to deploy to here:
 //
 // const defaultNetwork = "rinkeby";
-const defaultNetwork = "arbitrum";
-// const defaultNetwork = "localhost";
+// const defaultNetwork = "arbitrum";
+const defaultNetwork = "rinkeby";
 
 function mnemonic() {
   try {

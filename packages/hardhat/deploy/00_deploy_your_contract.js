@@ -6,11 +6,17 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
   const { deploy } = deployments;
   const { deployer } = await getNamedAccounts();
 
-  //   await deploy("Wands", {
-  //     from: deployer,
-  //     //args: [ "Hello", ethers.utils.parseEther("1.5") ],
-  //     log: true,
-  //   });
+  await deploy("Wands", {
+    from: deployer,
+    //args: [ "Hello", ethers.utils.parseEther("1.5") ],
+    log: true,
+  });
+
+  await deploy("APIConsumer", {
+    from: deployer,
+    //args: [ "Hello", ethers.utils.parseEther("1.5") ],
+    log: true,
+  });
 
   //   await deploy("TestNFT", {
   //     from: deployer,
@@ -24,16 +30,14 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
   //     value: ethers.utils.parseEther("0.01"),
   //   });
 
-  const MyContract = await ethers.getContractFactory("Wands");
-  const wandsContract = await MyContract.attach(
-    "0x991866c101521355153dec646a767246784c87af" // The deployed contract address
-  );
+  //   const MyContract = await ethers.getContractFactory("Wands");
+  //   const wandsContract = await MyContract.attach(
+  //     "0x991866c101521355153dec646a767246784c87af" // The deployed contract address
+  //   );
 
-  //   const wandsContract = await ethers.getContract("Wands", deployer);
-  //   await wandsContract.setConnector(testContract.address, 10, 10000);
-  await wandsContract.transferOwnership(
-    "0x76c48E1F02774C40372a3497620D946136136172"
-  );
+  //   await wandsContract.transferOwnership(
+  //     "0x76c48E1F02774C40372a3497620D946136136172"
+  //   );
   //   console.log("connect ", testContract.address);
 
   //   const hasConnector = await wandsContract.hasConnector(testContract.address);

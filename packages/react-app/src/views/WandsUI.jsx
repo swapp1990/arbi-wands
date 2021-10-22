@@ -50,11 +50,11 @@ export default function WandsUI({
     addEventListener("Wands", "WandMinted", onWandMinted);
     update();
 
-    const balance = await readContracts.Wands.balanceOfPartner(castlesContract, address);
-    console.log(balance.toNumber());
-    if (balance > 0) {
-      setIsOwnCastle(true);
-    }
+    // const balance = await readContracts.Wands.balanceOfPartner(castlesContract, address);
+    // console.log(balance.toNumber());
+    // if (balance > 0) {
+    //   setIsOwnCastle(true);
+    // }
   }
 
   const addEventListener = async (contractName, eventName, callback) => {

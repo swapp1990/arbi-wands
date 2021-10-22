@@ -271,7 +271,7 @@ contract Wands is ERC721Enumerable, ReentrancyGuard, Ownable {
 			end = woodType.length;
 		}
 		uint lengthIdx = rand % 9+9;
-		string memory length = string(abi.encodePacked(lengthIdx.toString(), '"'));
+		string memory length = string(abi.encodePacked(lengthIdx.toString(), " inches"));
 		string memory pre = "";
 		if(rand > 50) {
 			pre = prefix[rand%prefix.length];
